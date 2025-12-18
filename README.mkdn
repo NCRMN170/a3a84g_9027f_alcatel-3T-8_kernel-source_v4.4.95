@@ -1,11 +1,11 @@
 Kernel source from https://github.com/xmusjackson/android_kernel_tcl_A3A_8_4G_TMO.git
 -------------------------------------------------------------------------------------
 Thanks for xmusjackson
-
+----------------------
 I fixed and share this kernel source.
 
 
-You can use Ubuntu 22.04.5 LTS for compilation. Your operating system must have Python 2 installed.
+You can use Ubuntu 22.04.5 LTS for compilation. Your operating system must have Python 2 installed. Or you can use other solutions.
 
 Use these commands to set Python 2 as the default:
 
@@ -14,7 +14,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 2
 ```
 
-#and select python2 
+And select python2 
 ```
 sudo update-alternatives --config python
 ```
@@ -27,7 +27,7 @@ sudo update-alternatives --remove python /usr/bin/pytho3
 ```
 
 
-You can create a prebuilt kernel build environment for the a3a84g-9027f using these commands: (toolchain from LineageOS)
+You can create a prebuilt kernel build environment for the a3a84g-9027f using these commands: (toolchain from [LineageOS](https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9.git))
 ```
 cd $HOME
 
@@ -47,4 +47,12 @@ wget https://raw.githubusercontent.com/NCRMN170/depo/main/clean.sh
 chmod +x build_kernel.sh
 chmod +x clean.sh
 ```
+
+You can use build_kernel.sh to start the compilation.
+
+And clean.sh for cleanup.
+
+
+
+
 
