@@ -10,8 +10,10 @@ Use these commands to set Python 2 as the default:
 ```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 2
+```
 
 #and select python2 
+```
 sudo update-alternatives --config python
 ```
 
